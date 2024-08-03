@@ -13,6 +13,7 @@ public class BookDAO {
 		books.add(new Book(15, "shatrg", 20));
 		books.add(new Book(16, "ersrs", 19));
 		books.add(new Book(17, "yryr", 18));
+		books.add(new Book(16, "urud", 17));
 		return books;
 
 	}
