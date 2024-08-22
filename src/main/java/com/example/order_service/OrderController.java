@@ -44,7 +44,7 @@ public class OrderController {
     }
 
     public Order getAvilablemethods(Exception e) {
-        Order order = new Order("123456", "ABCDE", 123);
+        Order order = new Order("123456", "ABCDEF", 123);
         return order;
     }
 
