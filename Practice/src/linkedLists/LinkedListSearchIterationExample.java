@@ -1,5 +1,8 @@
 package linkedLists;
 
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -30,20 +33,27 @@ public class LinkedListSearchIterationExample {
 		while (it1.hasNext()) {
 			System.out.println(it1.next());
 		}
+		System.out.println();
 
 		// iterator with basic loop
-		for (Iterator it2 = progLangs.iterator(); it2.hasNext();) {
-			String s1 = (String) it2.next();
+		for (Iterator<String> it2 = progLangs.iterator(); it2.hasNext();) {
+			String s1 = it2.next();
 			System.out.println(s1);
 		}
+		System.out.println();
 
 		// enhanced for loop
 		for (String s2 : progLangs) {
 			System.out.println(s2);
 		}
+		System.out.println();
 
 		// forEach loop
-		progLangs.forEach((element) -> System.out.println(element + " for each"));
+		progLangs.forEach((element) -> System.out.println(element + " - for each"));
+
+		// using the streams
+		progLangs.stream().sorted().forEach((ele) -> System.out.println("-- " + ele));
+		
 
 	}
 

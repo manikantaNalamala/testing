@@ -3,12 +3,13 @@ package arrayLists;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class DifferentWaysToIterateArrayList {
 
 	public static void main(String[] args) {
 
-		List<String> courses = Arrays.asList("java", "C", "kotlin", "python", "spring");
+		List<String> courses = Arrays.asList("java", "C", "kotlin", "python", "spring", "jacku");
 
 		// Basic for loop
 		for (int i = 0; i < courses.size(); i++) {
@@ -29,15 +30,27 @@ public class DifferentWaysToIterateArrayList {
 			System.out.println(it1.next());
 		}
 
-		System.out.println("/");
-        // basic loop with iterator
-		for (Iterator it2 = courses.iterator(); it2.hasNext();) {
-			String s3 = (String) it2.next();
-			System.out.println(s3);
+		System.out.println("");
 
+		// basic loop with iterator
+		for (Iterator<String> it2 = courses.iterator(); it2.hasNext();) {
+			System.out.println(it2.next());
 		}
-		
-		// 
+
+		System.out.println();
+
+		// for each
+		courses.forEach((ele) -> {
+			System.out.println(ele + " -");
+		});
+		System.out.println();
+		// streams
+		courses.stream().sorted().forEach((ele) -> {
+			System.out.println("streams  " + ele);
+		});
+		System.out.println();
+		courses.stream().sorted().filter((ele) -> ele.startsWith("j")).collect(Collectors.toList())
+				.forEach((ty) -> System.out.println(ty + " filter"));
 
 	}
 

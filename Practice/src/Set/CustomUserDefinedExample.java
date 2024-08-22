@@ -1,4 +1,4 @@
-package hashSet;
+package Set;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -29,6 +29,8 @@ public class CustomUserDefinedExample {
 		public void setName(String name) {
 			this.name = name;
 		}
+
+		
 
 		@Override
 		public int hashCode() {

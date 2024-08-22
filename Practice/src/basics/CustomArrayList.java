@@ -4,9 +4,14 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class CustomArrayList extends ArrayList {
+public class CustomArrayList extends ArrayList<Object> {
 
 	// here we can restrict the Array list from allowing the duplicates.
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5582392470194874753L;
 
 	@Override
 	public boolean add(Object e) {

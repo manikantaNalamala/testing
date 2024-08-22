@@ -45,6 +45,7 @@ public class RetriveLinkedListElementsExample {
 		// to clear
 		fruits.clear();
 		System.out.println("after clearing - " + fruits);
+		
 	}
 
 }
