@@ -1,12 +1,13 @@
 package arrayLists;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Ex1 {
 
 	public static void main(String[] args) {
-		ArrayList<Integer> numbers = new ArrayList<Integer>();
+		List<Integer> numbers = new ArrayList<Integer>();
 		Scanner input = new Scanner(System.in);
 		while (true) {
 			displayMenu();
@@ -32,7 +33,7 @@ public class Ex1 {
 			} else if (n == 4) {
 				numbers.removeAll(numbers);
 				System.out.println("all are removed");
-				
+
 			}
 		}
 	}
