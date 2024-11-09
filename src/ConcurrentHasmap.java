@@ -16,6 +16,7 @@ public class ConcurrentHasmap {
         MyObj obj=MyObj.class.newInstance();*/
 
 
+
         ConcurrentHashMap<String, Integer> concurrentHashmap = new ConcurrentHashMap<>();
         //HashMap<String, Integer> concurrentHashmap = new HashMap<>();
         // try bcz parallel-stream uses the forkjoin pool(multi threads at a time)
