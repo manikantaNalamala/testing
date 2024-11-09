@@ -27,7 +27,7 @@ public class ParllelStream {
                             }
                     );
                     List<String> sortedOutput = new ArrayList<>(output);
-                    sortedOutput.sort(Comparator.naturalOrder());
+                    //sortedOutput.sort(Comparator.naturalOrder());
                     sortedOutput.forEach(System.out::println);
                 }
         );

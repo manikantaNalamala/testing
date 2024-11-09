@@ -21,7 +21,7 @@ public class CountDuplicateWords {
 			}
 		}
 
-		// Extracting all keys
+		// Extracting all keyss
 		Set<String> wordsInString = wordCount.keySet();
 
 		for (String s : wordsInString) {
