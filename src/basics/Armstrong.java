@@ -18,7 +18,7 @@ public class Armstrong {
 
 	public static void main(String[] args) {
 		int number = 153;
-		System.out.println("Is Armstrong number: " + isArmstrong(number));
+		System.out.println("Is Armstrong number  : " + isArmstrong(number));
 	}
 
 }
